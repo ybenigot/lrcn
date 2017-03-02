@@ -1,0 +1,24 @@
+net: "lrcn-resnet.prototxt"
+
+# lrcn.prototxt supports three variants of the LRCN architecture:
+# (1) stage: 'factored' stage: '2-layer'
+# (2) stage: 'unfactored' stage: '1-layer'
+# (3) stage: 'unfactored' stage: '2-layer'
+# This solver uses variant (1).
+# To use a different variant, modify the states (train_state, test_state)
+# below as appropriate:
+
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.8
+stepsize: 20000
+display: 100
+max_iter: 600000
+momentum: 0.9
+weight_decay: 0.0000
+snapshot: 5000
+snapshot_prefix: "lrcn-resnet"
+solver_mode: CPU
+random_seed: 1701
+average_loss: 100
+clip_gradients: 10

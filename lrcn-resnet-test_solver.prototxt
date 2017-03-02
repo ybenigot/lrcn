@@ -1,0 +1,18 @@
+net: "lrcn-resnet-test.prototxt"
+
+base_lr: 0.0
+lr_policy: "step"
+gamma: 0.8
+stepsize: 20000
+display: 100
+max_iter: 20000
+momentum: 0.9
+weight_decay: 0.0000
+#snapshot: 5000
+#snapshot_prefix: "lrcn-resnet-test"
+solver_mode: GPU
+random_seed: 1701
+average_loss: 100
+clip_gradients: 10
+test_interval: 1
+test_iter: 500
