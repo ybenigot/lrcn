@@ -2,6 +2,10 @@
 
 CNN+LSTM for captioning
 
+WIP *** does not work yet for prediction ***
+
+uses resnet50 for the CNN
+
 cf http://jeffdonahue.com/lrcn/
 
 citation
